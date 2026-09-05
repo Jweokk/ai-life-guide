@@ -810,6 +810,28 @@
     margin-top: 4px;
   }
 
+  /* ========== 锚点跳转 ========== */
+  html { scroll-behavior: smooth; }
+  a.toc-item { text-decoration: none; }
+  .jump-map a { color: inherit; text-decoration: none; }
+  .jump-map a:hover { color: #0369a1; text-decoration: underline; }
+  .back-toc {
+    position: fixed;
+    right: 18px; bottom: 18px;
+    z-index: 50;
+    display: inline-flex; align-items: center; gap: 6px;
+    background: #fff;
+    color: #805ad5;
+    border: 1px solid #e9d8fd;
+    border-radius: 999px;
+    padding: 8px 14px;
+    font-size: 0.85em;
+    font-weight: 700;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    text-decoration: none;
+  }
+  .back-toc:hover { background: #faf5ff; }
+
   @media (max-width: 640px) {
     body { padding: 15px 8px; }
     .cover { padding: 50px 24px 40px; min-height: auto; }
@@ -837,65 +859,76 @@
   </div>
 
   <!-- ==================== 目录 ==================== -->
-  <div class="toc-section">
+  <div class="toc-section" id="toc">
     <div class="toc-title">📖 目 录</div>
-    <ul class="toc-list">
-      <li class="toc-item">
+    <nav class="toc-list">
+      <a class="toc-item" href="#preface">
+
         <span class="toc-num">序</span>
         <span class="toc-text">欢迎来到"AI 搭子"时代</span>
         <span class="toc-sub">别怕，它不是来抢饭碗的</span>
-      </li>
-      <li class="toc-item">
+      </a>
+      <a class="toc-item" href="#ch01">
+
         <span class="toc-num">01</span>
         <span class="toc-text">先松绑，再出发</span>
         <span class="toc-sub">心态篇 · 焦虑是这个时代的新型感冒</span>
-      </li>
-      <li class="toc-item">
+      </a>
+      <a class="toc-item" href="#ch02">
+
         <span class="toc-num">02</span>
         <span class="toc-text">你的新"超能力"</span>
         <span class="toc-sub">技能篇 · 会聊天就能用好 AI</span>
-      </li>
-      <li class="toc-item">
+      </a>
+      <a class="toc-item" href="#ch03">
+
         <span class="toc-num">03</span>
         <span class="toc-text">上班愉快，下班搞钱</span>
         <span class="toc-sub">工作与副业篇 · 优雅高效，多一条路</span>
-      </li>
-      <li class="toc-item">
+      </a>
+      <a class="toc-item" href="#ch04">
+
         <span class="toc-num">04</span>
         <span class="toc-text">AI 挖的坑，人类含泪也要填</span>
         <span class="toc-sub">避坑篇 · 知道哪里会翻车比会开车更重要</span>
-      </li>
-      <li class="toc-item">
+      </a>
+      <a class="toc-item" href="#ch05">
+
         <span class="toc-num">05</span>
         <span class="toc-text">把日子过成诗（或者段子）</span>
         <span class="toc-sub">生活篇 · 工作够累了，生活让 AI 打辅助</span>
-      </li>
-      <li class="toc-item">
+      </a>
+      <a class="toc-item" href="#ch06">
+
         <span class="toc-num">06</span>
         <span class="toc-text">保护你的注意力</span>
         <span class="toc-sub">注意力篇 · 最稀缺的不是信息，是不被打扰</span>
-      </li>
-      <li class="toc-item">
+      </a>
+      <a class="toc-item" href="#ch07">
+
         <span class="toc-num">07</span>
         <span class="toc-text">成为更好的自己</span>
         <span class="toc-sub">成长篇 · 有了 AI，你终于可以专心做"人"</span>
-      </li>
-      <li class="toc-item">
+      </a>
+      <a class="toc-item" href="#ch08">
+
         <span class="toc-num">08</span>
         <span class="toc-text">AI 再懂你，也不如一个真人</span>
         <span class="toc-sub">关系篇 · 技术越发达，越要好好相爱</span>
-      </li>
-      <li class="toc-item">
+      </a>
+      <a class="toc-item" href="#ending">
+
         <span class="toc-num">终</span>
         <span class="toc-text">AI 很厉害，但你更可爱</span>
         <span class="toc-sub">写给五年后的自己</span>
-      </li>
-      <li class="toc-item toc-appendix">
+      </a>
+      <a class="toc-item toc-appendix" href="#appendix">
+
           <span class="toc-num">附</span>
           <span class="toc-text">口袋工具书 · 随用随查的实用清单</span>
           <span class="toc-sub">6 大附录，拿来就能用</span>
-        </li>
-    </ul>
+        </a>
+    </nav>
   </div>
 
   <!-- ==================== 序章 ==================== -->
@@ -909,12 +942,12 @@
     <div class="jump-map">
       <h4>🗺️ 跳读地图——不想从头看？直接对号入座</h4>
       <ul>
-        <li>焦虑到睡不着 → 第 01 章</li>
-        <li>想搞钱搞副业 → 第 03 章</li>
-        <li>就想省点时间 → 第 02 章</li>
-        <li>踩过 AI 的坑 → 第 04 章</li>
-        <li>单纯想看段子 → 每章"翻车现场"</li>
-        <li>想找点治愈感 → 第 07 章 + 结语</li>
+        <li>焦虑到睡不着 → <a href="#ch01">第 01 章</a></li>
+        <li>想搞钱搞副业 → <a href="#ch03">第 03 章</a></li>
+        <li>就想省点时间 → <a href="#ch02">第 02 章</a></li>
+        <li>踩过 AI 的坑 → <a href="#ch04">第 04 章</a></li>
+        <li>单纯想看段子 → <a href="#app5">每章"翻车现场"</a></li>
+        <li>想找点治愈感 → <a href="#ch07">第 07 章</a> + <a href="#ending">结语</a></li>
       </ul>
     </div>
 
@@ -2205,7 +2238,7 @@
     <p style="text-align:center; color:#718096; font-size:0.9em; margin-bottom:24px;">6 份实用清单，收藏好，随用随查～</p>
 
     <!-- 附录 1：AI 工具速查表 -->
-    <div class="appendix-detail">
+    <div class="appendix-detail" id="app1">
       <h4><span class="num-badge">01</span>🛠️ AI 工具速查表</h4>
       <p style="color:#718096; font-size:0.9em; margin-bottom:10px;">新手入门版，挑一个先用起来就行，不用贪多～</p>
       <table>
@@ -2277,7 +2310,7 @@
     </div>
 
     <!-- 附录 2：提示词模板库 -->
-    <div class="appendix-detail">
+    <div class="appendix-detail" id="app2">
       <h4><span class="num-badge">02</span>💬 高频场景提示词模板</h4>
       <p style="color:#718096; font-size:0.9em; margin-bottom:10px;">复制粘贴就能用，记得把【】里的内容换成你自己的～</p>
 
@@ -2355,7 +2388,7 @@
     </div>
 
     <!-- 附录 3：AI 黑话小词典 -->
-    <div class="appendix-detail">
+    <div class="appendix-detail" id="app3">
       <h4><span class="num-badge">03</span>📖 AI 黑话小词典</h4>
       <p style="color:#718096; font-size:0.9em; margin-bottom:10px;">别人聊 AI 时听不懂？别慌，看完这个你也能插上两嘴。</p>
 
@@ -2414,7 +2447,7 @@
     </div>
 
     <!-- 附录 4：明天就能做的 5 件小事 -->
-    <div class="appendix-detail">
+    <div class="appendix-detail" id="app4">
       <h4><span class="num-badge">04</span>🚀 明天就能做的 5 件小事</h4>
       <p style="color:#718096; font-size:0.9em; margin-bottom:10px;">读完书别让它吃灰。从这 5 件事开始，一件一件来，不急。</p>
 
@@ -2449,7 +2482,7 @@
     </div>
 
     <!-- 附录 5：翻车笑话合集 -->
-    <div class="appendix-detail">
+    <div class="appendix-detail" id="app5">
       <h4><span class="num-badge">05</span>😂 AI 翻车笑话合集</h4>
       <p style="color:#718096; font-size:0.9em; margin-bottom:10px;">焦虑了就翻一翻——你看，AI 也这么蠢，你慌啥呢？</p>
 
@@ -2494,7 +2527,7 @@
     </div>
 
     <!-- 附录 6：读者共创页 -->
-    <div class="appendix-detail">
+    <div class="appendix-detail" id="app6">
       <h4><span class="num-badge">06</span>🤝 读者共创页</h4>
       <div class="coop-box">
         <p>这本书不是一个人写的，<br>是每一个正在跟 AI 打交道的你，一起凑出来的。</p>
@@ -2537,4 +2570,5 @@
 </div>
 
 
+<a class="back-toc" href="#toc">📖 回目录</a>
 </body></html>
