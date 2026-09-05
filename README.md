@@ -56,7 +56,7 @@
 
 ## 版本
 
-见 [CHANGELOG.md](CHANGELOG.md)。当前 **v1.0.2**（2026-09-05）。
+见 [CHANGELOG.md](CHANGELOG.md)。当前 **v1.0.3**（2026-09-05）。
 
 ## 许可
 
