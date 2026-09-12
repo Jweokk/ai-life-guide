@@ -1,0 +1,27 @@
+# AI 时代人生指南
+
+> 写给普通人的 AI 时代轻松生活手册——先松绑，再出发。不讲技术，讲日子。
+
+AI 很厉害，但你更可爱。这本免费开源的小书聊的是普通人怎么在 AI 时代把生活过好：哪些焦虑可以放下、
+哪些能力正在升值、上班下班怎么用 AI 省时间、注意力怎么守住，以及"AI 再懂你，也不如一个真人"。
+单页 HTML 书，无需构建；10 篇短文，随时可读完一篇。
+
+A light-hearted, free, single-page guide for ordinary people in the AI era — no jargon, no hype: what to
+unlearn, what to keep, how to use AI at work and after hours, and why a real person still beats a model.
+
+- 作者 / Author：Jweokk｜在线阅读 / Read online：https://ailife.fly2ai.top
+- 形态 / Format：单页 HTML（`index.html`），无构建步骤
+- 许可 / License：非商业分享（CC BY-NC-SA 4.0）；商用须书面许可
+- 投稿 / Contributions：weokk2025@gmail.com（欢迎案例与困惑）
+
+## 篇目 / Sections
+- 欢迎来到"AI 搭子"时代 — 先看清你手里多了什么
+- 先松绑，再出发 — 放下那些不必再背的焦虑
+- 你的新"超能力" — 哪些能力在 AI 时代反而升值
+- 上班愉快，下班搞钱 — 用 AI 省时间、开小副业
+- AI 挖的坑，人类含泪也要填 — 常见误用与翻车现场
+- 把日子过成诗（或者段子）— 生活里的轻量玩法
+- 保护你的注意力 — 注意力是最后一块自留地
+- 成为更好的自己 — 把 AI 当陪练，而不是替身
+- AI 再懂你，也不如一个真人 — 关系、信任与不可替代
+- AI 很厉害，但你更可爱 — 收尾
